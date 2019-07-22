@@ -1,0 +1,45 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(74, 119, 117);
+  border-radius: 50%;
+}
+
+body {
+  background-color: rgb(167, 197, 191);
+  padding: 50px;
+}
+
+@keyframes slide{
+  0%  {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50%{
+    transform: translate3d(800px, 0px, 0px);
+    opacity: .2;
+  }
+  100%{
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+#myCircle{
+  animation: slide 10s infinite;
+}
+
+@keyframes slides{
+  0%  {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50%{
+    transform: translate3d(800px, 0px, 0px);
+    opacity: .2;
+  }
+  100%{
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+#myCircle2{
+  animation: slides 8s infinite;
+}
